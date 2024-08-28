@@ -76,7 +76,7 @@ const display =()=> {
 const agevalid=(dobInput) => {
     const dob = dobInput.value;
     const age= dob_check(dob);
-    if (age< 18 || age> 55) {
+    if (age< 18 && age> 55) {
 dobInput.setCustomValidity("age must be between  18 and 55"); 
     } else {
  dobInput.setCustomValidity(""); 
