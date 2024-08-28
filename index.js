@@ -61,7 +61,7 @@ const display =()=> {
         const emailspace = `<td>${entry.email}</td>`;
         const passwordspace = `<td>${entry.password}</td>`;
         const dobspace = `<td>${entry.dob}</td>`;
-        const termsspace = `<td>${entry.termandcondn ? 'Yes' : 'No'}</td>`;
+        const termsspace = `<td>${entry.termandcondn ? 'True' : 'False'}</td>`;
 
         return `<tr>${namespace}${emailspace}${passwordspace}${dobspace}${termsspace}</tr>`;
     }).join("\n");
