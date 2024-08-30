@@ -83,7 +83,7 @@ const display = () => {
         return `<tr>${namespace}${emailspace}${passwordspace}${dobspace}${termsspace}</tr>`;
     }).join("\n");
     
-    const table = `<table><tr><th>Name</th><th>Email</th><th>Password</th><th>Date of Birth</th><th>Accepted Terms?</th></tr>${tableentries}</table>`;
+    const table = `<table><tr><th>Name</th><th>Email</th><th>Password</th><th>Dob</th><th>Accepted Terms?</th></tr>${tableentries}</table>`;
     
     let details = document.getElementById("user-entries");
     details.innerHTML = table;
